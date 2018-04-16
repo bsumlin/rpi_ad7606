@@ -17,7 +17,7 @@ class AD7606:
         if conversionABmode == 'simultaneous': # all on one line
             self.p_convstb = None
             self.p_dataB = None
-        else conversionABmode == 'grouped': # all on A and B lines - update later to separate conversion and reading
+        elif conversionABmode == 'grouped': # all on A and B lines - update later to separate conversion and reading
             self.p_convstb = pins['convstb']
             self.p_dataB = pins['DoutB']
         self.p_reset = pins['reset']
