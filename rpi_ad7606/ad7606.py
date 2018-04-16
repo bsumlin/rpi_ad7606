@@ -13,7 +13,7 @@ class AD7606:
         self.ABmode = ABmode
         self.p_standby = pins['standby']
         self.p_convsta = pins['convsta']
-        self.p_dataA = pins['DoutA']
+        self.p_dataA = None#pins['DoutA'] # None for SPI
         if conversionABmode == 'simultaneous': # all on one line
             self.p_convstb = None
             self.p_dataB = None
