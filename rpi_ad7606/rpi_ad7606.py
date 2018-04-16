@@ -1,7 +1,7 @@
 import pigpio as pio
 from time import sleep
 
-class AD7606(chans):
+class AD7606:
     def __init__(self,communicationMode,inputRange,conversionABmode,pins):
         # pins should be a dict mapping pin names to RPi numbers. If using SPI, only need to specify CE channel. Unwrap pins to individual self.whatevers
         # inputRange should be 5 or 10, nothing else. Default it to 5.
