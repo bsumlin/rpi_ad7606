@@ -68,4 +68,4 @@ class AD7606:
             _channel5 = transferFunction(_d[8] << 8 | _d[9])
             _channel6 = transferFunction(_d[10] << 8 | _d[11])
 
-    return [_channel1,_channel2,_channel3,_channel4,_channel5,_channel6]
+        return [_channel1,_channel2,_channel3,_channel4,_channel5,_channel6]
